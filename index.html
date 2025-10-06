@@ -1,13 +1,26 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>proyecto-javascript</title>
-  </head>
-  <body>
-    <div id="app" class=""></div>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/svg+xml" href="/vite.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Rick and Morty App</title>
+	</head>
+
+	<body class="bg-gray-900 text-white min-h-screen">
+		<header class="bg-gray-800 shadow-md">
+			<div class="max-w-6xl mx-auto px-4 py-6 grid grid-cols-1 sm:grid-cols-3 items-center gap-4">
+				<div></div>
+				<h1 class="text-3xl font-extrabold text-green-400 text-center" id="home-link">Rick and Morty Explorer</h1>
+				<div class="flex justify-end items-center space-x-2">
+					<input type="text" id="text-search" placeholder="Buscar..." class="bg-white text-gray-900 rounded-full px-3 py-2 w-40 focus:outline-none" />
+					<button id="search-btn" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-full">Buscar</button>
+				</div>
+			</div>
+		</header>
+
+		<div id="app"></div>
+
+		<script type="module" src="/src/main.js"></script>
+	</body>
 </html>
