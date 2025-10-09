@@ -1,7 +1,7 @@
 export function CharacterCard(character) {
 	return `
     <div 
-      class="bg-gray-800 rounded-2xl overflow-hidden shadow-lg hover:shadow-green-500/20 hover:scale-105 transition-transform duration-300 cursor-pointer"
+      class= "personajes bg-gray-800 rounded-2xl overflow-hidden shadow-lg hover:shadow-green-500/20 hover:scale-105 transition-transform duration-300 cursor-pointer"
       data-id="${character.id}"
     >
       <img src="${character.image}" alt="${character.name}" class="w-full h-64 object-cover" />

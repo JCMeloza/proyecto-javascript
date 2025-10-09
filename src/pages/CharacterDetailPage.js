@@ -16,7 +16,7 @@ export async function CharacterDetailPage(id) {
         <img 
             src="${character.image}" 
             alt="${character.name}" 
-            class="rounded-full mx-auto mb-6 w-48 h-48 shadow-lg"
+            class="rounded-full mx-auto mb-6 w-55 h-55 shadow-lg"
         />
         <h2 class="text-3xl font-bold text-green-400 mb-2">${character.name}</h2>
         <p class="text-gray-300 mb-2"><span class="font-semibold">Estado:</span> ${character.status}</p>
