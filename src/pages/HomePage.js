@@ -40,36 +40,22 @@ export async function HomePage() {
             }
         });
         ///////
-         // Mostrar u ocultar la lista desplegable
-    document.querySelector('button').addEventListener('click', function() {
-      const dropdown = document.querySelector('.dropdown-content');
-      dropdown.classList.toggle('hidden');
-    });
-
-    // Cerrar la lista si se hace clic fuera de ella
-    window.onclick = function(event) {
-      if (!event.target.closest('.relative')) {
-        const dropdowns = document.querySelectorAll('.dropdown-content');
-        dropdowns.forEach(function(dropdown) {
-          dropdown.classList.add('hidden');
+        // Mostrar u ocultar la lista desplegable
+        document.querySelector("button").addEventListener("click", function () {
+            const dropdown = document.querySelector(".dropdown-content");
+            dropdown.classList.toggle("hidden");
         });
-      }
-    };
 
-        //filtrar buscados por el imput
-        textSsearch.addEventListener("input", () => {
-            let searchImput = document.getElementById("textSsearch");
-            let items = document.getElementsByClassName("personajes");
-            let filter = searchImput.value.toLowerCase();
-
-            Array.from(items).forEach((item) => {
-                let text = item.textContent || item.innerText;
-                item.classList.toggle(
-                    "hidden",
-                    !text.toLowerCase().includes(filter)
-                );
-            });
-        });
+        // Cerrar la lista si se hace clic fuera de ella
+        window.onclick = function (event) {
+            if (!event.target.closest(".relative")) {
+                const dropdowns =
+                    document.querySelectorAll(".dropdown-content");
+                dropdowns.forEach(function (dropdown) {
+                    dropdown.classList.add("hidden");
+                });
+            }
+        };
 
         // Lógica de cargar más
         const loadBtn = document.getElementById("load-more");
