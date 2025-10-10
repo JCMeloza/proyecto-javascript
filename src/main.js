@@ -11,7 +11,14 @@ document.getElementById("home-link").addEventListener("click", () => {
     history.pushState({}, "", "/");
     router();
 });
-
+// 🔹 Listener para el botón de Favoritos
+const favBtn = document.querySelector('button[data-route="/favorites"]');
+if (favBtn) {
+    favBtn.addEventListener("click", () => {
+        history.pushState({}, "", "/favorites");
+        router();
+    });
+}
 // Cargar la ruta actual
 router();
 
