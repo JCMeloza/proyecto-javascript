@@ -11,7 +11,7 @@ export function SearchOption() {
 
         <!-- Contenido del dropdown -->
         <div
-          class="dropdown-content absolute left-0 hidden mt-2 w-full bg-gray-800 border-gray-300 rounded-md shadow-lg"
+          class="dropdown-content absolute left-0 hidden mt-2 w-full bg-gray-800 border-gray-300 rounded-md shadow-lg z-50"
         >
           <!-- Sección Estado -->
           <div class="px-4 py-2">
