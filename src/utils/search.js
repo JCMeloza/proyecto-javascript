@@ -1,5 +1,5 @@
 export function initSearch() {
-  const searchInput = document.getElementById("textSsearch");
+  const searchInput = document.getElementById("textSearch");
   if (!searchInput) return; // Si el input no existe aún, salimos
 
   searchInput.addEventListener("input", () => {
