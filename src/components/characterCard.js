@@ -9,6 +9,7 @@ export function CharacterCard(character) {
         <h2 class="text-xl font-bold text-green-400">${character.name}</h2>
         <p class="text-sm text-gray-300 mt-1"><span class="font-semibold">Estado:</span> ${character.status}</p>
         <p class="text-sm text-gray-300"><span class="font-semibold">Especie:</span> ${character.species}</p>
+        
       </div>
     </div>
   `;
