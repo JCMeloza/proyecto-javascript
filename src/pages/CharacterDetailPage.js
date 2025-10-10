@@ -24,6 +24,7 @@ export async function CharacterDetailPage(id) {
         <p class="text-gray-300 mb-2"><span class="font-semibold">Género:</span> ${character.gender}</p>
         <p class="text-gray-300 mb-2"><span class="font-semibold">Origen:</span> ${character.origin.name}</p>
         <p class="text-gray-300 mb-4"><span class="font-semibold">Ubicación actual:</span> ${character.location.name}</p>
+        <p class="text-gray-300 mb-4"><span class="font-semibold">Número de episodios donde aparece:</span> ${(character.episode).length}</p>
         
         <button 
             id="back-btn" 
