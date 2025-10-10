@@ -8,25 +8,34 @@
     </head>
 
     <body class="bg-gray-900 text-white min-h-screen">
-        <header class="bg-gray-800 shadow-md pb-3 w-1/1">
-            <div
-                class="mx-auto px-4 py-6 grid grid-cols-1 sm:grid-cols-3 items-center gap-4"
-            >
-                <div></div>
+        <header class="bg-gray-800 shadow-md pb-6 w-full">
+            <div class="mx-auto px-4 py-6 flex flex-col items-center gap-4">
+                <!-- Título centrado -->
                 <h1
                     class="text-3xl font-extrabold text-green-400 text-center"
                     id="home-link"
                 >
                     Rick and Morty Explorer
                 </h1>
-                <div class="flex items-center gap-2">
+
+                <!-- Contenedor de búsqueda y botón -->
+                <div class="flex gap-4 w-full max-w-md">
+                    <!-- Input de búsqueda -->
                     <input
                         type="text"
-                        id="textSsearch"
+                        id="textSearch"
                         placeholder="Buscar..."
-                        class="bg-white text-gray-900 rounded-full px-3 py-2 w-40 focus:outline-none"
+                        class="bg-white text-gray-900 rounded-full px-3 py-2 flex-1 focus:outline-none"
                     />
-                    
+
+                    <!-- Botón Favoritos del mismo tamaño que el input -->
+                    <button
+                        data-route="/favorites"
+                        class="bg-red-500 text-white font-medium rounded-full px-3 py-2 flex-1 hover:bg-red-600"
+                    >
+                        Favoritos
+                    </button>
+                </div>
             </div>
         </header>
 
