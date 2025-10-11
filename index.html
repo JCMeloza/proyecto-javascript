@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/svg+xml" href="/proyecto-javascript/vite.svg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Rick and Morty App</title>
+      <script type="module" crossorigin src="/proyecto-javascript/assets/index-C0aykVUA.js"></script>
+      <link rel="stylesheet" crossorigin href="/proyecto-javascript/assets/index-C2mbr1fi.css">
+    </head>
+
+    <body class="bg-gray-900 text-white min-h-screen">
+        <header class="bg-gray-800 shadow-md pb-6 w-full">
+            <div class="mx-auto px-4 py-6 flex flex-col items-center gap-4">
+                <!-- Título centrado -->
+                <h1
+                    class="text-3xl font-extrabold text-green-400 text-center"
+                    id="home-link"
+                >
+                    Rick and Morty Explorer
+                </h1>
+
+                <!-- Contenedor de búsqueda y botón -->
+                <div class="flex gap-4 w-full max-w-md">
+                    <!-- Input de búsqueda -->
+                    <input
+                        type="text"
+                        id="textSearch"
+                        placeholder="Buscar..."
+                        class="bg-white text-gray-900 rounded-full px-3 py-2 flex-1 focus:outline-none"
+                    />
+
+                    <!-- Botón Favoritos del mismo tamaño que el input -->
+                    <button
+                        data-route="/favorites"
+                        class="bg-red-500 text-white font-medium rounded-full px-3 py-2 flex-1 hover:bg-red-600"
+                    >
+                        Favoritos
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <div id="app"></div>
+
+    </body>
+</html>
