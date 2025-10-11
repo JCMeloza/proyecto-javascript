@@ -98,10 +98,8 @@ http://localhost:5173
 
 ## 🌟 Mejoras Futuras
 
-- [ ] Paginación o botón “Cargar más”.
-- [ ] Filtros por estado y especie.
+
 - [ ] Página de episodios y localizaciones.
-- [ ] Sección de favoritos (con `localStorage`).
 - [ ] Animaciones adicionales con Framer Motion.
 - [ ] Modo oscuro/claro dinámico.
 
@@ -110,8 +108,8 @@ http://localhost:5173
 ## 💻 Autor
 
 **Tu Nombre**  
-📧 [tuemail@example.com]  
-💼 [GitHub](https://github.com/tuusuario)
+ 
+💼 [GitHub](https://github.com/JCMeloza)
 
 ---
 
