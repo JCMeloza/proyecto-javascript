@@ -1,0 +1,14 @@
+<!-- 404.html -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="refresh" content="0; url=/" />
+    <script>
+      // Redirigir cualquier ruta al index.html de la SPA
+      const path = window.location.pathname.replace("/proyecto-javascript", "");
+      sessionStorage.redirect = path;
+      window.location.href = "/proyecto-javascript/";
+    </script>
+  </head>
+  <body></body>
+</html>
